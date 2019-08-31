@@ -11,7 +11,8 @@ export default class ExpenseForm extends React.Component {
       amount: props.expense ? (props.expense.amount/100).toString() : '',
       note: props.expense ? props.expense.note : '',
       createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
-      calendarFocused: false
+      calendarFocused: false,
+      id: props.expense ? props.expense.id : ''
     }
   }
   onDescriptionChange = (e)=>{
@@ -47,7 +48,8 @@ export default class ExpenseForm extends React.Component {
         description: this.state.description,
         amount: parseFloat(amount, 10) * 100, //cents
         note: this.state.note,
-        createdAt: this.state.createdAt.valueOf() //melliseconds
+        createdAt: this.state.createdAt.valueOf(), //melliseconds,
+        id: this.state.id
       })
     }
   }

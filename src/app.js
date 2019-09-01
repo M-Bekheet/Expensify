@@ -46,9 +46,6 @@ firebase.auth().onAuthStateChanged(function (user) {
   }
 });
 
-// store.subscribe(state=> {
-//   console.log(store.getState())
-// })
 
 
 ReactDOM.render( <p>Loading...</p>, document.getElementById('app') );

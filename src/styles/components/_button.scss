@@ -1,0 +1,19 @@
+.button{
+  background: $blue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: $m-size;
+  text-decoration: none;
+}
+.button--link{
+  background: transparent;
+}
+.button-danger{
+  background: #e22e20;
+}

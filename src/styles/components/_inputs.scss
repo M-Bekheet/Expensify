@@ -1,0 +1,14 @@
+.text-input{
+  margin: 0 $s-size;
+  padding: $m-size;
+  font-size: $font-size-large;
+  line-height: 1; 
+}
+.select{
+  @extend .text-input
+}
+.textarea{
+  @extend .text-input;
+  height: 10rem;
+  resize: vertical;
+}

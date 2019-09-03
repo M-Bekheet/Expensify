@@ -1,0 +1,30 @@
+.input-group{
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  &__item{
+    margin-right: $s-size;
+  }
+  .DateInput_input{
+    margin: 0;
+    padding: $m-size;
+  }
+  .DateRangePickerInput__showClearDates{
+    padding: 0;
+  }
+}
+
+ @media(max-width: $desktop-breakpoint){
+   .input-group{
+     flex-direction: column;
+     margin: $s-size auto;
+     &__item{
+       margin: $s-size 0 0;
+       input, select{
+         margin: 0;
+         padding: $s-size;
+         height: 55px;
+       }
+     }
+   }
+}

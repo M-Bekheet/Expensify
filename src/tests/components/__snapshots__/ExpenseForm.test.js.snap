@@ -2,15 +2,18 @@
 
 exports[`should render Expense Form 1`] = `
 <form
+  className="form"
   onSubmit={[Function]}
 >
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -106,27 +109,35 @@ exports[`should render Expense Form 1`] = `
     withPortal={false}
   />
   <textarea
+    className="textarea"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <input
-    type="submit"
-  />
+  <div>
+    <input
+      className="button"
+      type="submit"
+      value="Save Expense"
+    />
+  </div>
 </form>
 `;
 
 exports[`should render Expense Form with expense data 1`] = `
 <form
+  className="form"
   onSubmit={[Function]}
 >
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value="Gas Bill"
   />
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -222,27 +233,35 @@ exports[`should render Expense Form with expense data 1`] = `
     withPortal={false}
   />
   <textarea
+    className="textarea"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <input
-    type="submit"
-  />
+  <div>
+    <input
+      className="button"
+      type="submit"
+      value="Save Expense"
+    />
+  </div>
 </form>
 `;
 
 exports[`should render error for invalid form validation 1`] = `
 <form
+  className="form"
   onSubmit={[Function]}
 >
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -338,27 +357,35 @@ exports[`should render error for invalid form validation 1`] = `
     withPortal={false}
   />
   <textarea
+    className="textarea"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <input
-    type="submit"
-  />
+  <div>
+    <input
+      className="button"
+      type="submit"
+      value="Save Expense"
+    />
+  </div>
 </form>
 `;
 
 exports[`should render error for invalid form validation 2`] = `
 <form
+  className="form"
   onSubmit={[Function]}
 >
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -454,13 +481,18 @@ exports[`should render error for invalid form validation 2`] = `
     withPortal={false}
   />
   <textarea
+    className="textarea"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <input
-    type="submit"
-  />
+  <div>
+    <input
+      className="button"
+      type="submit"
+      value="Save Expense"
+    />
+  </div>
   <div>
     <i>
       Error

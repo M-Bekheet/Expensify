@@ -1,0 +1,12 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  margin: $xl-size 0 0;
+  > * {
+    margin: 0 0 $m-size 0;
+  }
+  .SingleDatePickerInput{
+    width: 100%;
+  }
+}
+

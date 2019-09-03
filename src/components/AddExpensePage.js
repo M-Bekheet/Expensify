@@ -14,10 +14,18 @@ export class AddExpensePage extends Component {
   render() {
     return (
       <div>
-        <h1>Create Expense</h1>
-        <ExpenseForm
-          onSubmit={this.startAddExpense}
-        />      
+        <div className="page-header">
+          <div className="content-container">
+            <div className="page-header__title">
+              Create Expense
+            </div>
+          </div>
+        </div>
+        <div className="content-container">
+          <ExpenseForm
+            onSubmit={this.startAddExpense}
+          />      
+        </div>
       </div>
     )
   }

@@ -56,18 +56,20 @@ export default class ExpenseForm extends React.Component {
 
   render(){
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className="form" onSubmit={this.onSubmit}>
         <input 
           type="text"
           value={this.state.description}
           placeholder='Description'
           onChange={this.onDescriptionChange}
+          className="text-input"
         />
         <input 
           type="text"
           value={this.state.amount}
           placeholder='Amount'
           onChange={this.onAmountChange}
+          className="text-input"
         />
 
         <SingleDatePicker
@@ -84,10 +86,12 @@ export default class ExpenseForm extends React.Component {
           placeholder='Add a note for your expense (optional)'
           value={this.state.note}
           onChange={this.onNoteChange}
+          className="textarea"
         ></textarea>
     
-
-        <input type="submit" />
+        <div>
+          <input type="submit" value="Save Expense" className="button" />
+        </div>
 
         {this.state.error && <div>
           <i>Error</i> {this.state.error}
